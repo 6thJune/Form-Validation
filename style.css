@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: #1e1e1e;
+}
+
+.form {
+    width: 400px;
+    margin: 100px auto;
+}
+
+.form__title {
+    display: block;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #fff;
+    font-size: 22px;
+}
+
+.form__row {
+    position: relative;
+}
+
+.form__row input {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: transparent;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form__row label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #1e1e1e;
+    color: #aaa;
+    padding: 0 4px;
+    transition: all 0.1s ease;
+}
+
+.form__row .show-hide-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: underline;
+    color: #ccc;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form__message {
+    visibility: hidden;
+    display: block;
+    margin: 8px;
+    color: crimson;
+}
+
+.form__submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    transition: all 0.1s ease;
+}
+
+.form__row input:focus+label,
+.form__row input:not(:placeholder-shown)+label {
+    top: 0;
+    font-size: 12px;
+    color: #fff;
+}
+
+.form__submit:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+.error {
+    border-color: crimson !important;
+}
+
+.success {
+    border-color: yellowgreen !important;
+}
