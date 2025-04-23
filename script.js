@@ -39,15 +39,14 @@ password.addEventListener('blur', () => {
 
 function handleShowHide() {
     if (!isShow) {
-        isShow = !isShow;
         password.type = 'text';
         showHideBtn.textContent = 'Hide';
     }
     else {
-        isShow = !isShow;
         password.type = 'password';
         showHideBtn.textContent = 'Show'
     }
+    isShow = !isShow;
 }
 
 function handleValidValue(input) {
